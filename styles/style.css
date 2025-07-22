@@ -69,6 +69,16 @@
     max-width: 505px;
 }
 
+.dslr-bg-circle{
+    max-width: 475px;
+    max-height: 475px;
+}
+
+.dslr{
+    max-width: 440px;
+    max-height: 414px;
+}
+
 .btn-primary {
         max-width: 200px; 
         padding: 10px 56px 10px 25px ;
@@ -275,6 +285,7 @@ color: rgb(255, 255, 255);
      *{
         box-sizing: border-box;
         overflow-x: hidden;
+        position: relative;
      }
     
     .head {
@@ -285,11 +296,46 @@ color: rgb(255, 255, 255);
         flex-direction: column;
         gap: 15px;
          text-align: center;
+         
     }
     .li-container {
         flex-direction: column;
         gap: 8px;
         
+    }
+
+    .banner-img{
+       max-width: 400px;
+       height: 490px;
+        overflow: visible;
+         padding: 0 15px;
+
+    }
+ .dslr-bg-circle {
+    width: 100%;
+    max-width: 400px; /* Match your design */
+    height: auto;
+    aspect-ratio: 1/1; /* Maintain perfect circle */
+    margin: 0 auto; /* Center the circle */
+    position: relative;
+    left: auto;
+    right: auto;
+  }
+
+    .dslr {
+    width: 85%; /* Slightly smaller than circle */
+    max-width: 340px; /* 85% of 400px */
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  
+}
+
+    banner-img img{
+        width: 100%;
     }
 
     .banner-section{
@@ -301,8 +347,7 @@ color: rgb(255, 255, 255);
         text-align: center;
     }
 
-    
-    
+   
     .logo-container{
         display: flex;
         flex-wrap: wrap;
